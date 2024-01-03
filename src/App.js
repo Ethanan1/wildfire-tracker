@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const fetchEvents = async () => {
       setLoading(true);
-      const res = await fetch("https://eonet.gsfc.nasa.gov/api/v2.1/events");
+      const res = await fetch("");
       const { events } = await res.json();
 
       setEventData(events);
